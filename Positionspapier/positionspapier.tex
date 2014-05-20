@@ -9,7 +9,14 @@
 % Bibliographie
 \bibliography{bib/quellen}
 
-
+\usepackage{listings}
+\lstdefinestyle{myLuastyle}
+{
+  language         = {[5.2]Lua},
+  showstringspaces = false,
+  upquote          = true,
+}
+\lstset{style=myLuastyle}
 
 %%%%%%%%%% Angaben für die Titelseite %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -83,7 +90,23 @@ Lua ist eine imperative und erweiterbare Skriptsprache zum Einbinden in Programm
 Die Entwurfsvorschrift III fügt den bisherigen Entwurfsvorschriften die Rekursion hinzu. Damit ist es fortan möglich beliebig verschachtelte und große Datenstrukturen zu verarbeiten. Dafür ist im minimalen Fall ein Selbstaufruf und eine Terminierungsbedingung nötig.
 
 \chapter{Implementierung}
-l
+
+Die Implemtierung der Funktion 'first' ist in Lua sehr direkt umsetzbar. Der folgende Codeausschnitt beschreibt die Funktionsschablone.
+\begin{lstlisting}
+function first(tbl)
+  if preTable(tbl) then
+    if #tbl > 0 then
+      ... tbl[1]
+    else
+      ... {}
+    end
+  else
+    ... listenError
+  end
+end
+\end{lstlisting}
+
+Da 'first' nur eine Eingabe nimmt ist in diesem Fall auch keine Rekursion nötig. Trotzdem muss zu Beginn überprüft werden, ob die Eingabe eine Liste ist. Falls dies nicht der Fall ist wird der entsprechende Fehler ausgelöst. Falls die Eingabe eine Liste ist, so kann das erste Element ausgegeben werden, außer die Liste enthält kein Element, in dem Fall sollte die leere Liste zurückgegeben werden.
 
 \chapter{Fazit}
 
