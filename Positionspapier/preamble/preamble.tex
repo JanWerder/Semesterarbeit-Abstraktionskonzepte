@@ -1,0 +1,108 @@
+% ------------------------------------------------------------------------
+% **************************  LaTeX - Preambel  **************************
+% ------------------------------------------------------------------------
+% von: Mike Leneweit
+% ========================================================================
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Seitenlayout
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\documentclass[a4paper,12pt,openany,parskip,oneside,ngerman,headsepline]{scrbook}
+\usepackage{scrhack}
+
+% Seitenränder
+\usepackage{geometry}
+\geometry{a4paper, top=20mm, left=30mm, right=40mm, bottom=20mm, headsep=10mm, footskip=12mm}
+
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Sprache & Zeichen
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+\usepackage{lib/setspace}
+\onehalfspacing
+
+% Spracheinstellungen
+\usepackage[ngerman]{babel}
+
+% Zeichencodierung
+\usepackage[utf8]{inputenc}
+
+% Font
+\usepackage[T1]{fontenc}
+\renewcommand{\familydefault}{\sfdefault} % Serifenlose Schrift
+\usepackage[scaled=.95]{helvet} % Helvetica
+%\usepackage{lmodern} % Standardschriftart
+
+% Formatierungen
+\usepackage{soulutf8} % Spezielle Formatierungen
+\usepackage{textcase} % Text to upper/lower case
+
+% Links
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black, breaklinks=true, urlcolor=black]{hyperref}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Kopf-/Fußzeile
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\usepackage{scrpage2}
+\pagestyle{scrheadings}
+\clearscrplain
+\clearscrheadings
+\setheadsepline{0pt}
+\ofoot[\pagemark]{\pagemark}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Zitate
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+% Anführungszeichen
+% Zitieren mit \enquote{zitierter Text}
+% http://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_Anf%C3%BChrungszeichen#Anf.C3.BChrungszeichen_mit_dem_Paket_.22csquotes.22
+\usepackage[babel,german=quotes]{csquotes}
+
+% BibLaTeX
+% Weiteres unter http://biblatex.dominik-wassenhoven.de/download/DTK-2_2008-biblatex-Teil1.pdf
+\usepackage[backend=biber,style=alphabetic,autocite=footnote]{biblatex}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Sonstiges
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+% Rechnen
+\usepackage{calc}
+
+% Bilder
+\usepackage{graphicx}
+
+% Aufzählungen
+\usepackage{enumerate} % Aufzählungslabel bei enumerate anpassen (alternativ: \usepackage{enumitem})
+
+% Abkürzungen
+\usepackage[printonlyused]{acronym}
+
+% Referenz
+\usepackage{nameref}
+
+% Figuren
+\usepackage{float} % Stellt die Option [H] fuer Floats zur Verfgung, alternativ [htbp] verwenden
+
+% Fußnoten
+\usepackage[multiple]{footmisc}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Verringerung der BadBoxes
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\tolerance 1414
+\hbadness 1414
+\emergencystretch 1.5em
+\hfuzz 0.3pt
+\widowpenalty=10000
+\vfuzz \hfuzz
+\raggedbottom
+
+\addtokomafont{caption}{\small}
+\addtokomafont{captionlabel}{\small \bfseries}

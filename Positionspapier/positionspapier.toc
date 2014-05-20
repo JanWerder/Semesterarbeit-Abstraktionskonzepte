@@ -1,0 +1,15 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abbildungsverzeichnis}{III}{chapter*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Tabellenverzeichnis}{IV}{chapter*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Abk\IeC {\"u}rzungsverzeichnis}{V}{chapter*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Fazit}{2}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Literatur}{2}{chapter.2}

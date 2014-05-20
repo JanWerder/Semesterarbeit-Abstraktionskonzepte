@@ -1,0 +1,23 @@
+% If-Funktionen
+% http://www.matthiaspospiech.de/latex/vorlagen/allgemein/preambel/befehle/
+\usepackage{ifthen}
+
+% Testen, ob ein Befehl definiert wurde
+\providecommand{\IfDefined}[2]{%
+	\ifcsname #1\endcsname
+		#2%
+	\else
+		% do nothing
+	\fi
+}
+
+% Testen, ob ein Befehl definiert wurde, mit else-Anweisung
+\providecommand{\IfDefinedE}[3]{%
+	\ifcsname #1\endcsname
+		#2%
+	\else
+		#3%
+	\fi
+}
+
+\newcommand{\mvc}{Model-View-Controller }

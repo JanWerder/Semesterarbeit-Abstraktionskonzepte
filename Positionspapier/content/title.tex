@@ -1,0 +1,55 @@
+\begin{titlepage}
+\includegraphics[width={0.9\textwidth}]{img/NAKLogo.png}
+\begin{center}
+\IfDefined{typ}{
+	\large{\MakeTextUppercase{\so{\typ{}}}} \\
+}
+\vspace*{0.5cm}
+\begin{small}
+in der Fachrichtung \\
+\fachrichtung{} \\
+\end{small}
+\vspace*{1cm}
+\large{\MakeTextUppercase{\so{Thema}}} \\
+\vspace*{1cm}
+%\end{center} % ggf.
+\IfDefined{titel}{
+	\huge{\textbf{\titel{}}} \\
+}
+%\begin{center} % ggf.
+\vspace*{2cm}
+\begin{small}
+\begin{tabular}{p{5cm}p{6cm}}
+\IfDefined{autor}{
+	Eingereicht von:				& \autor{} \\
+}
+\IfDefined{strasse}{				& \strasse{} \\ }
+\IfDefined{ort}{					& \IfDefined{plz}{ \plz{} } \ort{} \\ }
+\IfDefined{tel}{
+	Tel.:						& \tel \\
+}
+\IfDefined{mail}{
+	E-Mail:						& \mail \\
+}
+\IfDefined{matnr}{
+	Matrikelnummer:				& \matnr \\
+}
+\IfDefined{zenturie}{
+	Zenturie:					& \zenturie \\\\
+}
+\IfDefined{zeitraum}{
+	Bearbeitungszeitrum:			& \zeitraum \\\\
+}
+\IfDefined{gutachter}{
+	Gutachter:					& \gutachter \\
+}
+\IfDefined{zweitgutachter}{
+	Zweitgutachter:					& \zweitgutachter  \\
+}
+\IfDefined{betgutachter}{
+	Betrieblicher Gutachter:		& \betgutachter \\
+}
+\end{tabular}
+\end{small} 
+\end{center}
+\end{titlepage}

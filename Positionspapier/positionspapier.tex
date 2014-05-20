@@ -1,0 +1,85 @@
+%%%%%%%%%% Includes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Preamble
+\input{preamble/preamble}
+
+% Zusätzliche Befehle
+\input{macros/commands}
+
+% Bibliographie
+\bibliography{bib/quellen}
+
+
+
+%%%%%%%%%% Angaben für die Titelseite %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Titel der Arbeit
+\newcommand{\titel}			{Übertragung der Entwurfsvorschrift III auf Lua}
+% Name des Autors
+\newcommand{\autor}			{Michael Bannas, Pascal Görgen, Marc Reineking, Timo Kluge, Matthias Sobek \& Jan Werder}
+% Zenturie des Autors
+\newcommand{\zenturie}		{I12a}
+% Typ der Arbeit
+\newcommand{\typ}			{Positionspapier}
+% Studiengang/Fachrichtung
+\newcommand{\fachrichtung}	{Wirtschaftsinformatik}
+% Bearbeitungszeitraum
+\newcommand{\zeitraum}		{20.05.2014}
+% Gutachter
+\newcommand{\gutachter}		{Johannes Brauer}
+
+%%%%%%%%%% Dokument Beginn %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% - Titelseite/Deckblatt
+% - Inhaltsverzeichnis
+% - Abbildungsverzeichnis (ggf.)
+% - Tabellenverzeichnis (ggf.)
+% - Abkürzungsverzeichnis (ggf.)
+% - Formelverzeichnis (ggf.)
+% - Hauptteil
+% - Quellen-/Literaturverzeichnis
+% - Eidesstattliche Erklärung
+
+
+
+\begin{document}
+
+% Titelseite/Deckblatt
+\input{content/title}
+
+\frontmatter
+
+% Römische Seitennummerierung
+\pagenumbering{Roman}
+% beginnend bei 2
+\setcounter{page}{2}
+% Inhaltsverzeichnis
+\tableofcontents
+
+% Abbildungsverzeichnis
+\listoffigures
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+
+% Tabellenverzeichnis
+ \listoftables
+ \addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+ 
+% Abkürzungsverzeichnis
+\chapter{Abkürzungsverzeichnis}
+
+
+%%%%%%%%%% Hauptteil %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+\chapter{Einleitung}
+
+lua stuff
+
+\chapter{Fazit}
+
+fazit stuff
+
+% Quellenverzeichnis
+\printbibliography
+\addcontentsline{toc}{chapter}{Literatur}
+\end{document}
