@@ -1,48 +1,62 @@
 local liste = {}
+
+--Gibt das erste Element einer Liste zurück
+--Bei einer leeren Liste ist die leere Liste das Resultat
 function first(tbl)
   if preTable(tbl) then
-   return tbl[1]
+    if #tbl > 0 then
+      return tbl[1]
+    else
+      return {}
+    end
   else
     return listenError
   end
 end
 
+--Entfernt das erste Element einer Liste und gibt die Restmenge zurück
+--Bei einer leeren Liste ist die leere Liste das Resultat
 function rest(tbl)
-  if preTable(tbl) then
-    t = tbl
-    table.remove(t, 1)
-    return t
+  local t = tbl
+  if preTable(t) then
+      table.remove(t, 1)
+      return t
   else
     return listenError
   end
 end
 
-function cons(tbl1, tbl2)
-  if preTable(tbl1) and preTable(tbl2) then
-    t = {}
-    table.insert(t, tbl1)
-    table.insert(t, tbl2)
-    return t
-  else
-    return listenError
-  end
-end
-
-function append(tbl1, tbl2)
-  if preTable(tbl1) and preTable(tbl2) then
-    t = {}
-    for k,v in ipairs(tbl1) do
-      table.insert(t, v)
+--Verkettet eine beliebige Anzahl von Listen in einer neuen Liste
+--Falls ein Paramter keine Liste ist, wird ein Fehler geworfen
+function cons(...)
+  local args = {...}
+  for k,v in ipairs(args) do
+    if not preTable(v)then
+      return listenError
     end
-    for k,v in ipairs(tbl2) do
-      table.insert(t, v)
-    end
-    return t
-  else
-    return listenError
-  end
+   end
+  return args
 end
 
+--Verkettet die Anzahl einer beliebigen Anzahl von Listen miteinander
+--Falls ein Paramter keine Liste ist, wird ein Fehler geworfen
+function append(...)
+    local args = {...}
+    local t = {}
+    for k1,v1 in ipairs(args) do
+      if preTable(v1)then
+        for k2,v2 in ipairs(v1) do 
+          table.insert(t,v2)
+        end
+      else
+        return listenError
+      end
+    end
+    return t
+end
+
+--Funktion zum überprüfen der Precondition
+--Gibt true zurück falls das geprüfte Element eine Liste ist
 function preTable (tbl)
   if type(tbl) == type(table) then
     return true
@@ -51,9 +65,13 @@ function preTable (tbl)
   end
 end
 
+--Error Codes
 listenError = 'Parameter ist keine Liste'
+
+--Funktionsbindung
 liste.append = append
 liste.cons = cons
 liste.rest = rest
 liste.first = first
+
 return liste
