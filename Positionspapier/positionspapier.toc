@@ -10,6 +10,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Fazit}{2}{chapter.2}
+\contentsline {section}{\numberline {1.1}Lua}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatur}{2}{chapter.2}
+\contentsline {section}{\numberline {1.2}Entwurfsvorschrift III}{1}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Implementierung}{2}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Fazit}{3}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Literatur}{3}{chapter.3}
