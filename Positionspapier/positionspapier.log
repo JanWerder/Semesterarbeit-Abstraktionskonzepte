@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.20)  21 MAY 2014 08:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.20)  21 MAY 2014 08:45
 entering extended mode
 **positionspapier.tex
 
@@ -1082,7 +1082,7 @@ Package biblatex Info: Reference segment=0 on input line 52.
 Package scrhack Info: undefining \float@addtolists on input line 52.
 
 (C:\Users\janwe_000\Documents\GitHub\Semesterarbeit-Abstraktionskonzepte\Positi
-onspapier\content/title.tex <img/NAKLogo.png, id=54, 1205.4636pt x 365.6862pt>
+onspapier\content/title.tex <img/NAKLogo.png, id=39, 1205.4636pt x 365.6862pt>
 File: img/NAKLogo.png Graphic file (type png)
 
 <use img/NAKLogo.png>
@@ -1124,39 +1124,25 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (C:\Users\janwe_000\Documents\GitHub\Semesterarbeit-Abstraktionskonzepte\Positi
 onspapier\positionspapier.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 13.
+(Font)              <12> on input line 7.
 )
 \tf@toc=\write6
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 11.39996pt on input line 67.
+(Font)              scaled to size 11.39996pt on input line 68.
  [2
 
 
 ]
-(C:\Users\janwe_000\Documents\GitHub\Semesterarbeit-Abstraktionskonzepte\Positi
-onspapier\positionspapier.lof)
-\tf@lof=\write7
- [3
-
-]
-(C:\Users\janwe_000\Documents\GitHub\Semesterarbeit-Abstraktionskonzepte\Positi
-onspapier\positionspapier.lot)
-\tf@lot=\write8
- [4
-
-] [5
-
-]
 Kapitel 1.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 85.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 74.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 85.
+(Font)              scaled to size 16.41594pt on input line 74.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92 \chapter
+l.81 \chapter
              {Implementierung} [1
 
 
@@ -1166,45 +1152,35 @@ Kapitel 2.
 
 ] [3]
 
-LaTeX Warning: Empty bibliography on input line 172.
+LaTeX Warning: Empty bibliography on input line 161.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
 [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
 
 (C:\Users\janwe_000\Documents\GitHub\Semesterarbeit-Abstraktionskonzepte\Positi
 onspapier\positionspapier.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
-
-
-Package rerunfilecheck Warning: File `positionspapier.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `positionspapier.out':
-(rerunfilecheck)             Before: 7CB3FBA154F1CE9624DBA08A068C64BD;730
-(rerunfilecheck)             After:  26497AD55D8B6F9F0147023A374454B0;696.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
+Package rerunfilecheck Info: File `positionspapier.out' has not changed.
+(rerunfilecheck)             Checksum: E09385C4FD82E5E4F05A1CD45136BDEE;518.
 Package logreq Info: Writing requests to 'positionspapier.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 16662 strings out of 493921
- 263640 string characters out of 3144864
+ 16628 strings out of 493921
+ 262684 string characters out of 3144864
  754870 words of memory out of 3000000
- 19624 multiletter control sequences out of 15000+200000
+ 19603 multiletter control sequences out of 15000+200000
  28764 words of font info for 42 fonts, out of 3000000 for 9000
  845 hyphenation exceptions out of 8191
  42i,10n,65p,946b,1497s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist
-, replaced by a fixed one
-
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on positionspapier.pdf (9 pages, 162100 bytes).
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on positionspapier.pdf (6 pages, 157371 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
