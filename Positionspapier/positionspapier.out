@@ -5,5 +5,8 @@
 \BOOKMARK [1][-]{section.1.1}{Lua}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.2}{Entwurfsvorschrift III}{chapter.1}% 6
 \BOOKMARK [0][-]{chapter.2}{Implementierung}{}% 7
-\BOOKMARK [0][-]{chapter.3}{Fazit}{}% 8
-\BOOKMARK [0][-]{chapter.3}{Literatur}{}% 9
+\BOOKMARK [1][-]{section.2.1}{Funktion 'first'}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Funktion 'rest'}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Funktion 'cons'}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.4}{Funktion 'append'}{chapter.2}% 11
+\BOOKMARK [0][-]{lstnumber.-4.14}{Literatur}{}% 12

@@ -90,7 +90,9 @@ Lua ist eine imperative und erweiterbare Skriptsprache zum Einbinden in Programm
 Die Entwurfsvorschrift III fügt den bisherigen Entwurfsvorschriften die Rekursion hinzu. Damit ist es fortan möglich beliebig verschachtelte und große Datenstrukturen zu verarbeiten. Dafür ist im minimalen Fall ein Selbstaufruf und eine Terminierungsbedingung nötig.
 
 \chapter{Implementierung}
+Die Implementierung ist für die Semesterarbeit so allgemein gehalten wie möglich. Bei vielen Funktionen ist es möglich Zahlen und Symbole zu verketten und eine beliebige Anzahl an Parametern zu übergeben. DIe Funktionsschablonen sind daher hier in diesem Dokument festgehalten und erklärt.
 
+\section{Funktion 'first'}
 Die Implemtierung der Funktion 'first' ist in Lua sehr direkt umsetzbar. Der folgende Codeausschnitt beschreibt die Funktionsschablone.
 \begin{lstlisting}
 function first(tbl)
@@ -108,9 +110,63 @@ end
 
 Da 'first' nur eine Eingabe nimmt ist in diesem Fall auch keine Rekursion nötig. Trotzdem muss zu Beginn überprüft werden, ob die Eingabe eine Liste ist. Falls dies nicht der Fall ist wird der entsprechende Fehler ausgelöst. Falls die Eingabe eine Liste ist, so kann das erste Element ausgegeben werden, außer die Liste enthält kein Element, in dem Fall sollte die leere Liste zurückgegeben werden.
 
-\chapter{Fazit}
+\section{Funktion 'rest'}
+Die Funktion 'rest' soll die Liste ohne das erste Element als Aufgabe haben. Dies wurde in Lua wie folgt umgesetzt.
 
-fazit stuff
+\begin{lstlisting}
+function rest(tbl)
+  ...
+  if preTable(t) then
+      table.remove(t, 1)
+      ...
+  else
+    ... listenError
+  end
+end
+\end{lstlisting}
+
+Die Eingabe wird zu Beginn mit der Precondition überprüft und falls sie keine Liste ist, wird ein Fehler zurückgegeben. Falls die Eingabe eine valide Tabelle ist, so wird das erste Element entfernt. Lua übernimmt hierbei die Behandlung der leeren Liste.
+
+
+\section{Funktion 'cons'}
+Die Funktion 'cons' kann in der Version der Autoren beliebige viele Parameter annehmen. Daher ist bei der unten angegeben Schablone zwischen '\{...\}' für die Parameter und '[...]' für die reguläre Vereinfachung der Schablone zu differenzieren.
+
+\begin{lstlisting}
+function cons(...)
+  local args = {...}
+  for k,v in ipairs(args) do
+    if not preTable(v)then
+      [...] listenError
+    end
+   end
+  return args
+end
+\end{lstlisting}
+
+Die Eingabe wird in unserer Implementation in eine lokale Variable geschrieben, was dazu führt, dass alle Parameter zu einer neuen Liste zusammengefügt werden. Da das die genaue Funktionsweise von 'cons' aus Clojure beschreibt, muss nun nur noch jede Eingabeliste auf die Precondition überprüft werden. Hier wird davon ausgegangen, dass jede Eingabe eine Liste sein muss.
+
+\section{Funktion 'append'}
+Die Funktion 'append' ist ebenfalls in der Lage eine variable Anzahl an Parametern anzunehmen.
+
+\begin{lstlisting}
+function append(...)
+    local args = {...}
+    [...]
+    for k1,v1 in ipairs(args) do
+      if preTable(v1)then
+        for k2,v2 in ipairs(v1) do 
+          [...]
+        end
+      else
+        [...] listenError
+      end
+    end
+    [...]
+end
+\end{lstlisting}
+
+Zuerst werden alle Parameter zu einer Liste zusammengefügt. Danach wird für jede Element überprüft ob es Liste ist. Sollte dies der Fall sein, so wird jedes Element aus der Liste in eine neue Liste überführt.
+
 
 % Quellenverzeichnis
 \printbibliography
