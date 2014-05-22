@@ -55,6 +55,28 @@ function append(...)
     return t
 end
 
+function table.empty (self)
+    for _, _ in pairs(self) do
+        return false
+    end
+    return true
+end
+
+--Reduziert alle Inhalte auf eine einfache Liste
+--Falls ein Parameter keine Liste ist, wird er trotzdem hinzugefügt
+function flatten(args)
+    if preTable(args) == false then
+      return args
+    end
+    if table.empty(args) then
+      return args
+    elseif not preTable(first(args)) then
+      return append({first(args)}, flatten(rest(args)))
+    else
+      return append(flatten(first(args)), flatten(rest(args)))
+    end
+end
+
 --Funktion zum überprüfen der Precondition
 --Gibt true zurück falls das geprüfte Element eine Liste ist
 function preTable (tbl)
@@ -69,6 +91,7 @@ end
 listenError = 'Parameter ist keine Liste'
 
 --Funktionsbindung
+liste.flatten = flatten
 liste.append = append
 liste.cons = cons
 liste.rest = rest

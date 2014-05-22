@@ -8,4 +8,6 @@ print('Rest: ' .. inspect(liste.rest({'A','B','C'})))
 
 print('Cons: ' .. inspect(liste.cons({{'A'},'B',2}, {'C','D'})))
 
-print('Append: ' .. inspect(liste.append({{'A'},'B'}, {'C','D'}, 2)))
+print('Append: ' .. inspect(liste.append({{'A'},'B'}, {'C','D'})))
+
+print('Flatten: ' .. inspect(liste.flatten({'Q',{{'A'}},'B','C','D'})))
