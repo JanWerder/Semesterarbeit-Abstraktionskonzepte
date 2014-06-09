@@ -18,4 +18,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Funktion 'append'}{4}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatur}{4}{lstnumber.-4.14}
+\contentsline {section}{\numberline {2.5}Funktion 'flatten'}{4}{section.2.5}

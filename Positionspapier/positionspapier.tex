@@ -32,8 +32,6 @@
 \newcommand{\fachrichtung}	{Wirtschaftsinformatik}
 % Bearbeitungszeitraum
 \newcommand{\zeitraum}		{20.05.2014}
-% Gutachter
-\newcommand{\gutachter}		{Johannes Brauer}
 
 %%%%%%%%%% Dokument Beginn %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -87,12 +85,12 @@ Die Implemtierung der Funktion 'first' ist in Lua sehr direkt umsetzbar. Der fol
 function first(tbl)
   if preTable(tbl) then
     if #tbl > 0 then
-      ... tbl[1]
+      ...
     else
-      ... {}
+      ...
     end
   else
-    ... listenError
+    ...
   end
 end
 \end{lstlisting}
@@ -106,10 +104,9 @@ Die Funktion 'rest' soll die Liste ohne das erste Element als Aufgabe haben. Die
 function rest(tbl)
   ...
   if preTable(t) then
-      table.remove(t, 1)
       ...
   else
-    ... listenError
+    ...
   end
 end
 \end{lstlisting}
@@ -118,17 +115,17 @@ Die Eingabe wird zu Beginn mit der Precondition überprüft und falls sie keine 
 
 
 \section{Funktion 'cons'}
-Die Funktion 'cons' kann in der Version der Autoren beliebige viele Parameter annehmen. Daher ist bei der unten angegeben Schablone zwischen '\{...\}' für die Parameter und '[...]' für die reguläre Vereinfachung der Schablone zu differenzieren.
+Die Funktion 'cons' kann in der Version der Autoren beliebige viele Parameter annehmen. Daher ist bei der unten angegeben Schablone zwischen '\{...\}' für die variablen Parameter und '[...]' für die reguläre Vereinfachung der Schablone zu differenzieren.
 
 \begin{lstlisting}
 function cons(...)
   local args = {...}
   for k,v in ipairs(args) do
     if not preTable(v)then
-      [...] listenError
+      [...]
     end
    end
-  return args
+  [...]
 end
 \end{lstlisting}
 
@@ -147,7 +144,7 @@ function append(...)
           [...]
         end
       else
-        [...] listenError
+        [...]
       end
     end
     [...]
@@ -156,8 +153,25 @@ end
 
 Zuerst werden alle Parameter zu einer Liste zusammengefügt. Danach wird für jede Element überprüft ob es Liste ist. Sollte dies der Fall sein, so wird jedes Element aus der Liste in eine neue Liste überführt.
 
+\section{Funktion 'flatten'}{
+Um die funktionale Programmierung mithilfe unserer Funktionen auszuprobieren, haben wir ebenfalls die Funktion 'flatten' aus der Vorlesung implementiert. Hierbei wird deutlich wie wir die genaue Struktur der Clojure Implementierung übernehmen können.
 
-% Quellenverzeichnis
-\printbibliography
-\addcontentsline{toc}{chapter}{Literatur}
+\begin{lstlisting}
+function flatten(args)
+    if preTable(args) == false then
+      ...
+    end
+    if table.empty(args) then
+      ...
+    elseif not preTable(first(args)) then
+      ...
+    else
+      ...
+    end
+end
+\end{lstlisting} 
+
+Allerdings musste für diese Funktion noch eine Hilfsfunktion implementiert werden, die prüft ob eine Liste leer ist.
+}
+
 \end{document}

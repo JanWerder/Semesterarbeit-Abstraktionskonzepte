@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.20)  21 MAY 2014 08:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.20)  9 JUN 2014 14:56
 entering extended mode
 **positionspapier.tex
 
@@ -972,27 +972,27 @@ File: german.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 ))
 (C:\Users\janwe_000\Documents\GitHub\Semesterarbeit-Abstraktionskonzepte\Positi
 onspapier\positionspapier.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 50.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 52.
+(Font)              scaled to size 11.39996pt on input line 50.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1037,10 +1037,10 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-Package hyperref Info: Link coloring ON on input line 52.
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+Package hyperref Info: Link coloring ON on input line 50.
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
 
 (C:\Users\janwe_000\Documents\GitHub\Semesterarbeit-Abstraktionskonzepte\Positi
 onspapier\positionspapier.out)
@@ -1062,8 +1062,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'positionspapier.bbl' not found.
 No file positionspapier.bbl.
-Package biblatex Info: Reference section=0 on input line 52.
-Package biblatex Info: Reference segment=0 on input line 52.
+Package biblatex Info: Reference section=0 on input line 50.
+Package biblatex Info: Reference segment=0 on input line 50.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count288
@@ -1079,10 +1079,10 @@ Package biblatex Info: Reference segment=0 on input line 52.
 \everyMPtoPDFconversion=\toks31
 )
 \c@lstlisting=\count294
-Package scrhack Info: undefining \float@addtolists on input line 52.
+Package scrhack Info: undefining \float@addtolists on input line 50.
 
 (C:\Users\janwe_000\Documents\GitHub\Semesterarbeit-Abstraktionskonzepte\Positi
-onspapier\content/title.tex <img/NAKLogo.png, id=39, 1205.4636pt x 365.6862pt>
+onspapier\content/title.tex <img/NAKLogo.png, id=43, 1205.4636pt x 365.6862pt>
 File: img/NAKLogo.png Graphic file (type png)
 
 <use img/NAKLogo.png>
@@ -1117,9 +1117,9 @@ Underfull \hbox (badness 5578) in paragraph at lines 25--25
 nts/GitHub/Semesterarbeit-Abstraktionskonzepte/Positionspapier/img/NAKLogo.png>
 ])
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 64.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 62.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 64.
+(Font)              scaled to size 11.39996pt on input line 62.
 
 (C:\Users\janwe_000\Documents\GitHub\Semesterarbeit-Abstraktionskonzepte\Positi
 onspapier\positionspapier.toc
@@ -1128,21 +1128,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 )
 \tf@toc=\write6
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 11.39996pt on input line 68.
+(Font)              scaled to size 11.39996pt on input line 66.
  [2
 
 
 ]
 Kapitel 1.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 74.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 72.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 74.
+(Font)              scaled to size 16.41594pt on input line 72.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81 \chapter
+l.79 \chapter
              {Implementierung} [1
 
 
@@ -1150,37 +1150,41 @@ l.81 \chapter
 Kapitel 2.
 [2
 
-] [3]
-
-LaTeX Warning: Empty bibliography on input line 161.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
-[4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
+] [3] [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
 
 (C:\Users\janwe_000\Documents\GitHub\Semesterarbeit-Abstraktionskonzepte\Positi
 onspapier\positionspapier.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
-Package rerunfilecheck Info: File `positionspapier.out' has not changed.
-(rerunfilecheck)             Checksum: E09385C4FD82E5E4F05A1CD45136BDEE;518.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
+
+
+Package rerunfilecheck Warning: File `positionspapier.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `positionspapier.out':
+(rerunfilecheck)             Before: D525BEFED6012A5E27B316E0ABA27E25;584
+(rerunfilecheck)             After:  5C18B0629A92ED5E73D0384878226CF5;532.
 Package logreq Info: Writing requests to 'positionspapier.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
  ) 
 Here is how much of TeX's memory you used:
- 16628 strings out of 493921
- 262684 string characters out of 3144864
- 754870 words of memory out of 3000000
- 19603 multiletter control sequences out of 15000+200000
+ 16643 strings out of 493921
+ 262881 string characters out of 3144864
+ 754853 words of memory out of 3000000
+ 19604 multiletter control sequences out of 15000+200000
  28764 words of font info for 42 fonts, out of 3000000 for 9000
  845 hyphenation exceptions out of 8191
- 42i,10n,65p,946b,1497s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,11n,65p,946b,1903s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files 
 (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on positionspapier.pdf (6 pages, 157371 bytes).
+Output written on positionspapier.pdf (7 pages, 161222 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

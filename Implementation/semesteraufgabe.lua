@@ -55,6 +55,8 @@ function append(...)
     return t
 end
 
+--Überprüft ob alle Element einer Liste leer sind.
+--_ sagt lediglich dass diese Variable nicht weiter benutzt wird
 function table.empty (self)
     for _, _ in pairs(self) do
         return false
